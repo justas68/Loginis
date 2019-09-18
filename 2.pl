@@ -9,9 +9,10 @@ kelias(panevezys, subacius, 30).
 kelias(subacius, kupiskis, 18).
 kelias(vilnius, kupiskis, 160).
 kelias(kupiskis, rokiskis, 40).
-kelias(rokiskis, panevezys, 80).
 kelias(vilnius, siauliai, 186).
+kelias(panevezys, siauliai, 50).
 
+%1.1
 maziau(Skaicius1, Skaicius2) :-
   Skaicius1 < Skaicius2.
 
@@ -25,8 +26,11 @@ nuvaziuos(Miestas1, Miestas2, MaxAtstumas):-
 % kelias(kupiskis, panevezys, 121).
 % kelias(vilnius, panevezys, Atstumas).
 
+%4
 f(1, 1).
 f(0, 0).
 f(N, F):- N1 is N-1, N2 is N-2, f(N1, F1), f(N2, F2),  F is F1+F2.
 
 % f(5, X).
+% f(9, 34).
+% f(X, 13).

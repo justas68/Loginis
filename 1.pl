@@ -1,13 +1,13 @@
 % Justas Tvarijonas programų sistemos 4 kursas, 3 grupė
 % 4; 17; 36; 39
 
-asmuo(justas, vyr,  22, dota).
+asmuo(justas, vyr,  22, zaidimai).
 asmuo(ruta, mot, 26, dainavimas).
-asmuo(audrius, vyr, 24, gitara).
+asmuo(audrius, vyr, 24, zaidimai).
 asmuo(ausra, mot, 51, mokymas).
 asmuo(arnoldas, vyr, 50, vaidyba).
-asmuo(tomas, vyr, 24, elektronika).
-asmuo(remigijus, vyr, 22, statybos).
+asmuo(tomas, vyr, 24, zaidimai).
+asmuo(remigijus, vyr, 22, zaidimai).
 asmuo(mindaugas, vyr, 49, zvejyba).
 asmuo(vita, mot, 48, grybavimas).
 asmuo(romas, vyr, 40, sodyba).
@@ -21,8 +21,6 @@ asmuo(gintautas, vyr, 47, drozinejimas).
 asmuo(violeta, mot, 48, apsipirkimai).
 asmuo(aivaras, vyr, 20, ukininkavimas).
 asmuo(aida, mot, 14, sokiai).
-asmuo(a, mot, 16, sokiai).
-asmuo(b, vyr, 15, sokiai).
 
 
 mama(ausra, justas).
