@@ -1,15 +1,6 @@
-%DOMAINS
-%vardas = symbol
-%lytis = symbol
-%amzius = integer
-%pomegis = symbol
+% Justas Tvarijonas programų sistemos 4 kursas, 3 grupė
+% 4; 17; 36; 39
 
-%PREDICATES
-%asmuo(symbol, symbol, integer, symbol)
-%mama(asmuo, asmuo)
-%pora(asmuo, asmuo)
-
-%CLAUSES
 asmuo(justas, vyr,  22, dota).
 asmuo(ruta, mot, 26, dainavimas).
 asmuo(audrius, vyr, 24, gitara).
@@ -64,11 +55,17 @@ sunus(Sunus, TevasMama):-
   asmuo(Sunus, vyr, _, _),
   tevasMama(Sunus, TevasMama).
 
+%sunus(audrius, ausra).
+%sunus(tomas, mindaugas).
+
 %17
 anuke(Anuke, SenelisSenele):-
   asmuo(Anuke, mot, _, _),
   tevasMama(Anuke, TevasMama), 
   tevasMama(TevasMama, SenelisSenele).
+
+%anuke(ruta, vladas).
+%anuke(ruta, vale).
 
 %36
 brolisSese(Vaikas, BrolisSese):-
@@ -82,6 +79,8 @@ vidurinis(Vaikas) :-
   (brolisSese(Vaikas, BrolisSese2),
   asmuo(BrolisSese2, _, Amzius3, _), Amzius1 < Amzius3).
 
+%vidurinis(audrius).
+%viduinis(mindaugas).
 %39
 panasusAmzius(Amzius1, Amzius2):-
   Amzius1 - Amzius2 < 4,
@@ -95,4 +94,6 @@ trys_draugai(Draugas1, Draugas2, Draugas3):-
   panasusAmzius(Amzius1, Amzius2),
   panasusAmzius(Amzius1, Amzius3),
   panasusAmzius(Amzius2, Amzius3).
+
+%trys_draugai(tomas, audrius, remigijus).
 
