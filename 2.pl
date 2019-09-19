@@ -22,9 +22,9 @@ nuvaziuos(Miestas1, Miestas2, MaxAtstumas):-
  (kelias(Miestas1, TarpinisMiestas, TarpinisAtstumas),
  nuvaziuos(TarpinisMiestas, Miestas2, MaxAtstumas - TarpinisAtstumas))).
 
-% kelias(vilnius, palanga, 330).
-% kelias(kupiskis, panevezys, 121).
-% kelias(vilnius, panevezys, Atstumas).
+% nuvaziuos(vilnius, palanga, 330).
+% nuvaziuos(kupiskis, panevezys, 121).
+% nuvaziuos(vilnius, panevezys, Atstumas).
 
 %4
 f(1, 1).

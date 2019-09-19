@@ -68,7 +68,8 @@ anuke(Anuke, SenelisSenele):-
 %36
 brolisSese(Vaikas, BrolisSese):-
   tevasMama(Vaikas, TevasMama),
-  tevasMama(BrolisSese, TevasMama).
+  tevasMama(BrolisSese, TevasMama),
+  Vaikas \= BrolisSese. 
 
 vidurinis(Vaikas) :-
   asmuo(Vaikas, _, Amzius1, _),
@@ -88,6 +89,7 @@ trys_draugai(Draugas1, Draugas2, Draugas3):-
   asmuo(Draugas1, _, Amzius1, Pomegis1),
   asmuo(Draugas2, _, Amzius2, Pomegis2),
   asmuo(Draugas3, _, Amzius3, Pomegis3),
+  Draugas1 \= Draugas2, Draugas2 \= Draugas3, Draugas1\= Draugas3,
   Pomegis1 = Pomegis2, Pomegis2 = Pomegis3,
   panasusAmzius(Amzius1, Amzius2),
   panasusAmzius(Amzius1, Amzius3),
